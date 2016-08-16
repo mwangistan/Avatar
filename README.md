@@ -21,14 +21,18 @@ Commit messages are important, especially since Git tracks your changes and then
 
 <h1>3. Open a Pull Request</h1>
 Pull Requests initiate discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.
-__You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas___, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
-[ProTip!](https://github.com)
+You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas___, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
+
+__ProTip__
+
 *Pull Requests are useful for contributing to open source projects and for managing changes to shared repositories.* If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider. If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the master branch.
 
-4. Discuss and review your code
+<h1>4. Discuss and review your code </h1>
+
 Once a Pull Request has been opened, the person or team reviewing your changes may have questions or comments. Perhaps the coding style doesn't match project guidelines, the change is missing unit tests, or maybe everything looks great and props are in order. Pull Requests are designed to encourage and capture this type of conversation.
 You can also continue to push to your branch in light of discussion and feedback about your commits. If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view.
-ProTip
+__ProTip__
+
 Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.
 
 <h1>5. Deploy </h1>
@@ -42,8 +46,3 @@ __ProTip__
 By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase Closes #32 would close issue number 32 in the repository. For more information, check out our [help article](https://help.github.com/articles/closing-issues-via-commit-messages).
 
 
-
-=======
-6. Merge
-Now that your changes have been verified in production, it is time to merge your code into the 
->>>>>>> 3c194b0ab2fa72b1c07a79b319e9caa2ac5dd0c4
