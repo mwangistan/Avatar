@@ -1,3 +1,4 @@
+#prime_num
 def prime_num(n):
 	current_number = 3
 	check_prime = True
