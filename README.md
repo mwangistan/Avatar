@@ -1,15 +1,15 @@
-Understand the Gitflow
-Source: Github Guides
+#Understand the Gitflow
+*Source: Github Guides*
 
 
 GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. This guide explains how and why GitHub Flow works.
 
-1. Create a branch
+**1. Create a branch**
 When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.
 When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the master branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
-ProTip
-Branching is a core concept in Git, and the entire GitHub Flow is based upon it. There's only one rule: anything in the master branch is always deployable.
-Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive (e.g., refactor-authentication, user-content-cache-key, make-retina-avatars), so that others can see what is being worked on.
+*ProTip*
+Branching is a core concept in Git, and the entire GitHub Flow is based upon it. There's only one rule: **anything in the master branch is always deployable.**
+Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive *(e.g., refactor-authentication, user-content-cache-key, make-retina-avatars), so that others can see what is being worked on.*
 
 
 2. Add commits
@@ -34,6 +34,7 @@ Pull Request comments are written in Markdown, so you can embed images and emoji
 **5. Deploy **
 Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.
 
+<<<<<<< HEAD
 **6. Merge **
 Now that your changes have been verified in production, it is time to merge your code into the master branch.
 Once merged, Pull Requests preserve a record of the historical changes to your code. Because they're searchable, they let anyone go back in time to understand why and how a decision was made.
@@ -42,3 +43,7 @@ By incorporating certain keywords into the text of your Pull Request, you can as
 
 
 
+=======
+6. Merge
+Now that your changes have been verified in production, it is time to merge your code into the 
+>>>>>>> 3c194b0ab2fa72b1c07a79b319e9caa2ac5dd0c4
