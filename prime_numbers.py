@@ -1,22 +1,25 @@
-#prime_num
-def prime_num(n):
-	current_number = 3
-	check_prime = True
-	divisor = 3
-	if n > 2:
-		print 2
-		while current_number <= n:
-			while divisor < current_number:
-				if current_number % divisor == 0:
-					check_prime = False
-					break
-				else:
-					check_prime = True
-					divisor += 1
-			if check_prime:
-				print current_number
-			divisor = 3
-			current_number += 2
-
-prime_num(20)
-
+class PrimeChecker(object):
+  
+  #init method for all variables
+  def __init__(self, number=None):
+    self.number = number
+    
+  #create a function to return true if number is prime
+  def is_prime(self):
+    #prime numbers start from 2
+    try:
+      num = int(self.number)
+      if num < 2:
+        return False
+      else:
+        divisor = 2
+        while divisor < num:
+          if num % divisor == 0:
+            return False
+            break
+          divisor = divisor + 1
+        else:
+          return True
+          
+    except:
+      return False
